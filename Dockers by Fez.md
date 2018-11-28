@@ -159,7 +159,7 @@ Before running the image download and docker run step, download provided blockch
 ````bash
 sudo apt update
 sudo apt install unzip -y
-sudo mkdir $HOME/.graft		# (if not done already)
+mkdir $HOME/.graft		# (if not done already)
 wget "https://www.dropbox.com/s/b55s59bluvp8s1z/graft_bc_testnet_bkp_17Nov18.zip" -P /tmp
 unzip /tmp/graft_bc_testnet_bkp_17Nov18.zip '.graft/testnet/*' -d $HOME/
 ````
