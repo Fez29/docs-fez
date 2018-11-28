@@ -100,7 +100,7 @@ wget https://rta.graft.observer/lmdb/data.mdb -P $HOME/.graft/testnet/lmdb/
 ## Start graftnoded
 
 ````bash
-$HOME/supernode/BUILD/bin/./graftnoded --testnet --log-file ~/graft-sn/logs/graftnoded.log --log-level=1 --detach
+$HOME/supernode/BUILD/bin/./graftnoded --testnet --log-file ~/supernode/logs/graftnoded.log --log-level=1 --detach
 ````
 
 ## Start graft_server
