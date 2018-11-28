@@ -10,14 +10,14 @@ These instructions will help you build and setup a Graft Supernode from Source.
 ## Prepare the server
 If you have not done so add a user and give it sudo rights.  We'll use graft-user, but you can use any username you prefer.
 
-````console
+````bash
 adduser graft-user
 usermod -aG sudo graft-user
 ````
 
 Logout of root and log back in with your new username and password.  Once you are logged in under the new account update and upgrade the server.  If you receive a prompt "What do you want to do about modified configuration file sshd_config?" choose the first option "install the package maintainer's version"
 
-````console
+````bash
 sudo apt-get update
 sudo apt-get upgrade -y
 ````
