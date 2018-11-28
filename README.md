@@ -129,5 +129,5 @@ rm watch-only-wallets.tar
 ## Start Graft Server
 
 ````bash
-$HOME/supernode/./graft_server --log-file $HOME/supernode/logs/graft_server.log
+$HOME/supernode/./graft_server --log-level=1--log-file $HOME/supernode/logs/graft_server.log
 ````
