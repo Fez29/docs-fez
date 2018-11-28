@@ -1,6 +1,6 @@
 # Guide Built for Ubuntu 18.04 - Docker container
 
-Thanks to Jagerman @Jagerman (Telegram handle) for the alpha 3 code fork and optimizations included, including the wizard to install his packages and the watch-only-wallets download for testnet. https://github.com/jagerman/GraftNetwork  
+Thanks to Jason @jagerman42 (Telegram handle) for the alpha 3 code fork and optimizations included, including the wizard to install his packages and the watch-only-wallets download for testnet. https://github.com/graft-community/GraftNetwork  
 Thanks to MustDie95 for the initial Docker build on Alpha3 code which I used as a backbone to get this running and tweaked his supervisor config to make the graftnoded and graft_server start automatically once the docker container starts. https://github.com/MustDie95/graft  
 Thanks to Tiago S @el_duderino_007 (Telegram handle) for the blockchain download and initail guide for installing Alpha3 code on server.
  
@@ -152,7 +152,7 @@ Above command in bold is name used in docker run command
 
 
 ## Optional:
-(Beware of using below on mainnet is much safer to download Blockchain youself | also please consult @Jagerman before using 
+(Beware of using below on mainnet is much safer to download Blockchain youself | also please consult @jagerman42 before using 
 any watch-only-wallets downloads on mainnet):
 
 Before running the image download and docker run step, download provided blockchain directory.
