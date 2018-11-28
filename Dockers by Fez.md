@@ -181,7 +181,7 @@ sudo docker container update --cpus 2 graft
 Download Watch only wallets:
 Login to already running container:
 ````bash
-docker exec -ti graft /bin/bash
+sudo docker exec -ti graft /bin/bash
 mkdir -p ~/.graft/supernode/data/{watch-only-wallets,stake-wallet} && cd ~/.graft/supernode/data && curl -s https://rta.graft.observer/lmdb/watch-only-wallets.tar | tar xvf -
 ````
 Kill graft_server process:
@@ -197,10 +197,10 @@ In this example use = 4002
 kill -9 4002
 ````
 graft_server will start automatically again.
-````bash
 cd back to location for supernode logs 
-cd/home/graft-sn/supernode
-tail -f -n 150 supernode.log to view logs
+````bash
+cd /home/graft-sn/supernode
+tail -f -n 150 supernode.log	# to view logs
 ```` 
 
 To adjust supervisor behaviour:
