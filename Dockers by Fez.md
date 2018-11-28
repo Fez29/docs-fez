@@ -94,7 +94,7 @@ graft-wallet-cli --wallet-file ~/.graft/supernode/data/stake-wallet/stake-wallet
 Record seed and store safely especially on Mainnet (KEEP OFFLINE or written down and never reveal to anyone!)
 when in wallet type: seed and follow prompt (no password just press enter)
 
-Once graftnoded fully synced and stake in wallet, kill graft_server process to speed up process.
+Once graftnoded fully synced and stake in wallet, kill graft_server process to speed up process.  
  Kill graft_server process:
 ````bash
 ps ax | graft_server
@@ -153,9 +153,7 @@ Above command in bold is name used in docker run command
 
 ## Optional:
 (Beware of using below on mainnet is much safer to download Blockchain youself | also please consult @Jagerman before using 
-````bash
 any watch-only-wallets downloads on mainnet):
-````
 
 Before running the image download and docker run step, download provided blockchain directory.
 ````bash
