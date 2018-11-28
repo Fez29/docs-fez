@@ -22,7 +22,7 @@ Logout of root and log back in with your new username and password.  Once you ar
 
     free -h
     df -h
-    sudo fallocate -l 4G /swapfile
+    sudo fallocate -l 4G /swapfile          # Change 4G to the proper size swap file for your server
     sudo chmod 600 /swapfile
     sudo mkswap /swapfile
     sudo swapon /swapfile
@@ -38,13 +38,13 @@ Logout of root and log back in with your new username and password.  Once you ar
     sudo ufw default deny incoming
     sudo ufw allow ssh/tcp
     sudo ufw limit ssh/tcp
-    sudo ufw allow 28600/tcp
-    sudo ufw allow 28643/tcp
-    sudo ufw allow 28680/tcp
-    sudo ufw allow 28680/udp
-    sudo ufw allow 28681/tcp
-    sudo ufw allow 28690/tcp
-    sudo ufw allow 8081/tcp
+    sudo ufw allow 28600/tcp            # Load balancer http port
+    sudo ufw allow 28643/tcp            # Load balancer https port
+    sudo ufw allow 28680/tcp            # p2p node port
+    sudo ufw allow 28680/udp            # p2p node port
+    sudo ufw allow 28681/tcp            # rpc node port
+    sudo ufw allow 28690/tcp            # rpc supernode port
+    sudo ufw allow 8081/tcp             # block explorer port
     sudo ufw logging on
     sudo ufw -f enable
     sudo ufw status
