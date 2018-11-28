@@ -60,8 +60,8 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 
 Update apt again and install docker Community Edition:
 ````bash
-apt-get update
-apt-get install docker-ce
+sudo apt-get update
+sudo apt-get install docker-ce
 ````
 
 Prepare Docker volume mount:
