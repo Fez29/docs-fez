@@ -77,7 +77,7 @@ sudo docker run --name graft -d -v $HOME/.graft:/root/.graft -p 28690:28690 -p 2
 
 Use docker exec to login to the container as root:
 ````bash
-docker exec -ti graft /bin/bash
+sudo docker exec -ti graft /bin/bash
 ````
 
 Note that graftnoded and graft_server are automatically started and restarted if they die by by supervisor - See optional if you want to disable/adjust behaviour. 
