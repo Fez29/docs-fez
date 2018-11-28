@@ -66,7 +66,7 @@ sudo apt-get install -y docker-ce
 
 Prepare Docker volume mount:
 ````bash
-sudo mkdir $HOME/.graft
+mkdir $HOME/.graft
 ````
 
 Download image and run container after with mounted volume <B>(Check [Optional](https://github.com/mv1879/docs/blob/master/Dockers%20by%20Fez.md#optional) at botom of this guide before continuing)</B>
