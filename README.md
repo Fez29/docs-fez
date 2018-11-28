@@ -64,6 +64,13 @@ sudo apt-get install -y git build-essential cmake pkg-config libboost-all-dev li
 autoconf automake check libpcre3-dev rapidjson-dev libreadline-dev
 ````
 
+## Increase the limit for maximum allowed opened file descriptors per process
+
+````bash
+sudo sed -i -e 's/.*DefaultLimitNOFILE=.*/DefaultLimitNOFILE=8192/g' /etc/systemd/system.conf
+````
+
+
 ## Git Graft
 
 ````bash
