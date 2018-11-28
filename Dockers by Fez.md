@@ -69,7 +69,7 @@ Prepare Docker volume mount:
 sudo mkdir $HOME/.graft
 ````
 
-Download image and run container after with mounted volume (Check Optional at botom of this guide before continuing)
+Download image and run container after with mounted volume <B>(Check [Optional](https://github.com/mv1879/docs/blob/master/Dockers%20by%20Fez.md#optional) at botom of this guide before continuing)</B>
 :
 ````bash
 sudo docker run --name graft -d -v $HOME/.graft:/root/.graft -p 28690:28690 -p 28680:28680 fez29/graftnoded-jagerman:Jagerman-Experiment_fez29
@@ -157,14 +157,14 @@ any watch-only-wallets downloads on mainnet):
 
 Before running the image download and docker run step, download provided blockchain directory.
 ````bash
-apt update
+sudo apt update
 sudo apt install unzip -y
-sudo mkdir $HOME/.graft (if not done already)
+sudo mkdir $HOME/.graft		# (if not done already)
 wget "https://www.dropbox.com/s/b55s59bluvp8s1z/graft_bc_testnet_bkp_17Nov18.zip" -P /tmp
 unzip /tmp/graft_bc_testnet_bkp_17Nov18.zip '.graft/testnet/*' -d $HOME/
 ````
 
-Go back to: Download image and run container after with mounted volume 
+Go back to: [Download image and run container after with mounted volume ](https://github.com/mv1879/docs/blob/master/Dockers%20by%20Fez.md#add-docker-repo)
 
 ## ADVANCED
 
