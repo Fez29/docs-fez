@@ -67,9 +67,8 @@ autoconf automake check libpcre3-dev rapidjson-dev libreadline-dev
 ## Git Graft
 
 ````bash
-git clone --recursive https://github.com/graft-project/graft-ng.git
+git clone --recursive -b alpha3 https://github.com/graft-project/graft-ng.git
 cd graft-ng
-git checkout alpha3
 git submodule update --init --recursive
 ````
 
