@@ -13,13 +13,13 @@ Note: if you are running as root please exclude any sudo references below:
 ````bash
 sudo apt-get remove docker docker-engine docker.io
 sudo apt-get update
-sudo apt-get upgrade    # (for all promts just select keep as is) Optional
+sudo apt-get upgrade -y    # (for all promts just select keep as is) Optional
 ````
 
 Install Docker dependencies (Copy entire command - all 6 lines and paste)
 
 ````bash
-sudo apt-get install \
+sudo apt-get install -y \
 apt-transport-https \
 ca-certificates \
 curl \
@@ -61,7 +61,7 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 Update apt again and install docker Community Edition:
 ````bash
 sudo apt-get update
-sudo apt-get install docker-ce
+sudo apt-get install -y docker-ce
 ````
 
 Prepare Docker volume mount:
