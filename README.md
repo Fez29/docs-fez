@@ -1,4 +1,4 @@
-# Setup Graft Supernode
+# Setup Graft Supernode (Building from Source)
 
 ## Getting Started
 These instructions will help you build and setup a Graft Supernode from Source.
